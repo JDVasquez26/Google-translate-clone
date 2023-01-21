@@ -49,10 +49,6 @@ textarea{
     border: none;
     resize: none;
     padding:18px;
-    /* specific width since this part of the site
-    stays the same through out, make sure stays 
-    the same no matter what with !important */
-    width: 200px !important;
     height:146px;
     border-radius: 10px;
     outline: none;
@@ -169,11 +165,11 @@ to make it into three columns */
     color: #8ab4f8;
   }
   
-  /* .button-container {
+  .button-container {
     color:#bdc1c6;
     padding: 18px;
     height: 20px;
-  } */
+  }
   
   /* .select-drop-down input {
     color: #8ab4f8;
@@ -190,10 +186,10 @@ to make it into three columns */
     fill: #8ab4f8;
   } */
   
-  /* .input .delete {
+  .input .delete {
     position: relative;
     left: 265px;
     top: -156px;
     font-size: 50px;
     color:#bdc1c6;
-  } */
+  }

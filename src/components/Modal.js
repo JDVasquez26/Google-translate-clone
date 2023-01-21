@@ -25,7 +25,7 @@ const Modal = ({ setShowModal, languages, chosenLanguage, setChosenLanguage }) =
   };
 
   //check if search language is updating; only for when we type
-  console.log(searchedLanguage);
+  // console.log(searchedLanguage);
   return (
     // give options for list of languages
     <div className="option-list">
