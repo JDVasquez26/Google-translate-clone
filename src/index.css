@@ -114,6 +114,7 @@ the text input, the the right hand side */
     padding-right: 40px;
     width: 90% !important;
     outline: none;
+    /* background-color: white; */
   }
   
   .search-bar .close-button svg {
@@ -171,20 +172,12 @@ to make it into three columns */
     height: 20px;
   }
   
-  /* .select-drop-down input {
+  .select-drop-down input {
     color: #8ab4f8;
     padding: 5px 15px;
     font-size: 15px;
-  } */
+  }
   
-  /* .select-drop-down .down-arrow svg {
-    position: relative;
-    left: 265px;
-    top: -33px;
-    width: 26px;
-    height: 26px;
-    fill: #8ab4f8;
-  } */
   
   .input .delete {
     position: relative;
