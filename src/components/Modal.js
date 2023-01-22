@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+//What is a modal: https://blog.hubspot.com/website/modal-web-design
+
 const Modal = ({ setShowModal, languages, chosenLanguage, setChosenLanguage }) => {
   //our searched language is diff than chosen langue..
   //..we dont want to make multiple calls everytime we type, also to not go over API calls!
