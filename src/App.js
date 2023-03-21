@@ -40,6 +40,16 @@ const App = () => {
   }
 
   return (
+    <div
+    className='content'
+    >
+    <div
+    className='header'
+    >
+          <h1>Translate It!</h1>
+          <h1>Translate It!</h1>    
+    </div>
+    <br></br>
     <div className="app">
       {!showModal && (
         <>
@@ -79,6 +89,8 @@ const App = () => {
         />
       )}
     </div>
+    </div>
+    
   )
 }
 
