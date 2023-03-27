@@ -88,19 +88,11 @@ const App = () => {
         )}
       </div>
       <div
-      style={{
-        display:"flex",
-        justifyContent:"space-around",
-        alignItems:"center"
-      }}
+      className="links"
       >
-      <a 
-      style={{color:"#03a9f4", textDecoration:"none", cursor:"pointer", fontWeight:"300"}}
-      href=''>Overview</a>
+      <a href=''>Overview</a>
                 {"   "}
-       <a 
-        style={{color:"#03a9f4", textDecoration:"none", cursor:"pointer"}}
-       href='https://github.com/JDVasquez26/Google-translate-clone'>GitHub Repo</a>
+       <a href='https://github.com/JDVasquez26/Google-translate-clone'>GitHub Repo</a>
       </div>
     </div>
   );

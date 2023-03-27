@@ -1,45 +1,48 @@
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    margin: 0;
-    /* color from the site itself */
-    /* background-color: #202124; */
-    /* the following makes sure everything is on the center */
-    display: flex;
-    justify-content: center;
-    height:100vh;
-    align-items: center;
+body {
+  margin: 0;
+  /* color from the site itself */
+  /* background-color: #202124; */
+  /* the following makes sure everything is on the center */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 
-    background: linear-gradient(271deg, #202222, #202124, #3d4040, #202124);
-    background-size: 800% 800%;
-    animation: AnimationName 12s ease infinite;
+  background: linear-gradient(271deg, #202222, #202124, #3d4040, #202124);
+  background-size: 800% 800%;
+  animation: AnimationName 12s ease infinite;
 }
 
 @keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
-.content{
-  width:750px;
+.content {
+  width: 750px;
   /* background-color: #202124; */
-  padding: 15px 15px
+  padding: 15px 15px;
   /* border: solid red 3px; */
 }
-
 
 /* Heading */
 .header {
   position: relative;
-  width:300px;
-  height:100px;
-  justify-content:center;
-  align-items:center;
+  width: 300px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
   /* border: 1px solid white */
 }
 
@@ -91,150 +94,348 @@ body{
   }
 }
 
-.app{
-    display: flex;
-    /* very specific w & h because the boxes are not very responsive
+.app {
+  display: flex;
+  /* very specific w & h because the boxes are not very responsive
     just like the offical site */
-    width: 625px;
-    height: 360px;
+  width: 625px;
+  height: 360px;
 }
-
-
-
 
 /* genereric input that it's no specific, should be up
 here since there's more specific ones below */
-input{
-    border: 1px solid #8ab4f8;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #bdc1c6;
-    font-size: 14px;
-    height: 40px;
-    background-color: transparent;
-    width: 100%;
+input {
+  border: 1px solid #8ab4f8;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #bdc1c6;
+  font-size: 14px;
+  height: 40px;
+  background-color: transparent;
+  width: 100%;
 }
 
 /* styling both at the same time */
-.output, .input{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+.output,
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
-textarea{
-    background-color: transparent;
-    /* color taken from the site itself */
-    color: #bdc1c6;
-    border: none;
-    resize: none;
-    padding:18px;
-    height:146px;
-    border-radius: 10px;
-    outline: none;
-    /* makes it so we can scroll in the text area itself */
-    overflow: auto;
-    font-size: 28px;
-    margin-top: 10px;
+textarea {
+  background-color: transparent;
+  /* color taken from the site itself */
+  color: #bdc1c6;
+  border: none;
+  resize: none;
+  padding: 18px;
+  height: 146px;
+  border-radius: 10px;
+  outline: none;
+  /* makes it so we can scroll in the text area itself */
+  overflow: auto;
+  font-size: 28px;
+  margin-top: 10px;
 }
 
 /* any textarea in that lives in output class in TextBox  */
-.output textarea{
-    background-color: #303134;
+.output textarea {
+  background-color: #303134;
 }
 
 /* input from the select-drop-down */
-.select-drop-down input{
-    color: #8ab4f8;
-/* 5 to the top, 15 to the sides */
-    padding: 5px 15px;
-    font-size: 15px;
-
+.select-drop-down input {
+  color: #8ab4f8;
+  /* 5 to the top, 15 to the sides */
+  padding: 5px 15px;
+  font-size: 15px;
 }
 
 /* in SelectDropDown component, the arrow */
-.select-drop-down .down-arrow svg{
-/* changing the arrow's position from below
+.select-drop-down .down-arrow svg {
+  /* changing the arrow's position from below
 the text input, the the right hand side */
-    position: relative;
-    left: 265px;
-    top:-33px;
-    width:26px;
-    height:26px;
-/* with svgs we change colors with fill */
-    fill: #8ab4f8;
+  position: relative;
+  left: 265px;
+  top: -33px;
+  width: 26px;
+  height: 26px;
+  /* with svgs we change colors with fill */
+  fill: #8ab4f8;
 }
 
 .arrow-container {
-    padding: 15px;
+  padding: 15px;
 }
 
-.arrow-container svg{
-    width: 26px;
-    height:26px;
-    fill: #5a5a5a;
+.arrow-container svg {
+  width: 26px;
+  height: 26px;
+  fill: #5a5a5a;
 }
 
 /* styling the modal */
 .option-list {
-    width:100%; 
+  width: 100%;
 }
 .search-bar {
-    width:100%; 
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .search-bar input {
+  /* from website, and no repeat at the end - image of a magnifying glass*/
+  background: url(https://www.gstatic.com/images/icons/material/system/2x/search_grey600_24dp.png)
+    right 8px center no-repeat;
+  background-size: 24px 24px;
+  padding-left: 16px;
+  padding-right: 40px;
+  width: 90% !important;
+  outline: none;
+  /* background-color: white; */
+}
+
+.search-bar .close-button svg {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  fill: #5a5a5d;
+}
+
+.option-container {
+  height: 250px;
+  /* allows us to scroll through all the options */
+  overflow: auto;
+}
+
+.option-list ul {
+  margin: 15px;
+  padding: 0;
+  /* hard coded the height of the list itself because we're going
+to make it into three columns */
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.option-list li {
+  color: #bdc1c6;
+  font-size: 14px;
+  padding: 8px;
+  /* no bullet points */
+  list-style-type: none;
+  border-radius: 4px;
+}
+
+.option-list li:hover {
+  background-color: #5a5a5d;
+}
+
+/* for icon and list item to be next to each other */
+.list-item {
+  display: flex;
+}
+/* for chosen language icon */
+.list-item .icon {
+  padding: 8px;
+  width: 11px;
+  color: #8ab4f8;
+}
+
+.button-container {
+  color: #bdc1c6;
+  padding: 18px;
+  height: 20px;
+}
+
+.select-drop-down input {
+  color: #8ab4f8;
+  padding: 5px 15px;
+  font-size: 15px;
+}
+
+.input .delete {
+  position: relative;
+  left: 265px;
+  top: -156px;
+  font-size: 50px;
+  color: #bdc1c6;
+}
+
+@media screen and (max-width: 1075px) {
+  /* body{
+      justify-content: flex-start;
+    } */
+    
+  .header h1 {
+    font-size: 3em;
+    position: absolute;
+    transform: translate(-5%, -5%);
+  }
+
+  input {
+    width: 150px;
+  }
+
+  output {
+    width: 150px;
+  }
+
+  .select-drop-down {
+    width: 150px;
+  }
+
+  .select-drop-down .down-arrow svg {
+    left: 100px;
+  }
+
+  .arrow-container {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    justify-content: flex-start;
+    width: 340px;
+    height: 826px;
+    overflow: hidden;
+  }
+  .app {
+    width: 370px;
+    height: 626px;
+    overflow: hidden;
+    /* background-color: purple; */
+  }
+
+  .content {
+    /* width:400px; */
+    width: 340px;
+  
+    /* background-color: green; */
+  }
+
+  .header {
+    width: 300px;
+    height: 100px;
+  }
+  .header h1 {
+    font-size: 3em;
+    transform: translate(1%, -10%);
+  }
+
+  input {
+    width: 150px;
+    font-size: 60px;
+    /* background-color: blue; */
+  }
+
+  .output,
+  .input {
+    width: 150px;
+    height: 500px;
+    font-size: 20px;
+    /* background-color: red; */
+  }
+
+  .select-drop-down {
+    width: 40px;
+  }
+
+  .select-drop-down .down-arrow svg {
+    left: 100px;
+  }
+
+  .arrow-container {
+    padding: 10px;
+  }
+  .arrow-container svg {
+    width: 20px;
+    height: 20px;
+    fill: whitesmoke;
+  }
+
+  textarea {
+    font-size: 200px;
+    padding: 8px;
+    /* background-color: green; */
+  }
+
+  .text-area input {
+    width: 20px;
+   
+  }
+
+  .button-container {
+    padding: 8px;
+  }
+
+  .input .delete {
+    position: relative;
+    left: 359px;
+    top: -376px;
+    font-size: 30px;
+    color: #bdc1c6;
+  }
+
+  /* SEARCH */
+ 
+  .search-bar {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .search-bar input {
     /* from website, and no repeat at the end - image of a magnifying glass*/
-    background: url(https://www.gstatic.com/images/icons/material/system/2x/search_grey600_24dp.png) right 8px center no-repeat;
+    background: url(https://www.gstatic.com/images/icons/material/system/2x/search_grey600_24dp.png)
+      right 8px center no-repeat;
     background-size: 24px 24px;
     padding-left: 16px;
-    padding-right: 40px;
-    width: 90% !important;
+    padding-right: 25px;
+    width: 350px !important;
     outline: none;
     /* background-color: white; */
   }
-  
+
   .search-bar .close-button svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;;
     padding: 6px;
-    fill: #5a5a5d;
+    fill: white
   }
-  
+ 
   .option-container {
-    height: 250px;
-    /* allows us to scroll through all the options */
-    overflow: auto;
+    height: 526px
   }
-  
+
   .option-list ul {
-    margin: 15px;
+    margin: 3px;
     padding: 0;
-/* hard coded the height of the list itself because we're going
-to make it into three columns */
-    height: 1300px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: auto;
+    border: solid 1px whitesmoke;
   }
-  
+
   .option-list li {
     color: #bdc1c6;
-    font-size: 14px;
-    padding: 8px;
+    font-size: 17px;
+    padding: 4px;
     /* no bullet points */
     list-style-type: none;
     border-radius: 4px;
+    
   }
-  
+
   .option-list li:hover {
     background-color: #5a5a5d;
   }
-  
+
   /* for icon and list item to be next to each other */
   .list-item {
     display: flex;
@@ -245,24 +446,20 @@ to make it into three columns */
     width: 11px;
     color: #8ab4f8;
   }
-  
-  .button-container {
-    color:#bdc1c6;
-    padding: 18px;
-    height: 20px;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-self: space-evenly;
+    align-items: center;
+
   }
-  
-  .select-drop-down input {
-    color: #8ab4f8;
-    padding: 5px 15px;
-    font-size: 15px;
+
+  .links a{
+    color:#03a9f4;
+    font-size: 1.25em;
+    text-decoration: none;
+    cursor: pointer;
+    font: weight 500px; 
   }
-  
-  
-  .input .delete {
-    position: relative;
-    left: 265px;
-    top: -156px;
-    font-size: 50px;
-    color:#bdc1c6;
-  }
+}
