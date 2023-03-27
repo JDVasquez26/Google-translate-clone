@@ -267,11 +267,29 @@ to make it into three columns */
   color: #bdc1c6;
 }
 
+.links {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: yellow; */
+  /* flex-direction: column;
+  justify-self: center;
+  align-items:center; */
+
+}
+
+.links a{
+  color:#03a9f4;
+  font-size: 1.25em;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500px; 
+}
+
 @media screen and (max-width: 1075px) {
   /* body{
       justify-content: flex-start;
     } */
-    
+
   .header h1 {
     font-size: 3em;
     position: absolute;
@@ -304,7 +322,7 @@ to make it into three columns */
     justify-content: flex-start;
     width: 340px;
     height: 826px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .app {
     width: 370px;
@@ -338,7 +356,7 @@ to make it into three columns */
   .output,
   .input {
     width: 150px;
-    height: 500px;
+    height: 400px;
     font-size: 20px;
     /* background-color: red; */
   }
@@ -399,7 +417,7 @@ to make it into three columns */
     background-size: 24px 24px;
     padding-left: 16px;
     padding-right: 25px;
-    width: 350px !important;
+    width: 300px !important;
     outline: none;
     /* background-color: white; */
   }
@@ -412,7 +430,7 @@ to make it into three columns */
   }
  
   .option-container {
-    height: 526px
+    height: 506px
   }
 
   .option-list ul {
@@ -447,19 +465,4 @@ to make it into three columns */
     color: #8ab4f8;
   }
 
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-self: space-evenly;
-    align-items: center;
-
-  }
-
-  .links a{
-    color:#03a9f4;
-    font-size: 1.25em;
-    text-decoration: none;
-    cursor: pointer;
-    font: weight 500px; 
-  }
 }
