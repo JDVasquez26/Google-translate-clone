@@ -356,7 +356,7 @@ to make it into three columns */
   .output,
   .input {
     width: 150px;
-    height: 400px;
+    height: 500px;
     font-size: 20px;
     /* background-color: red; */
   }
@@ -430,8 +430,8 @@ to make it into three columns */
   }
  
   .option-container {
-    height: 480px;
-    width:340px
+    height: 466px;
+    width: 330px;
   }
 
   .option-list ul {
@@ -466,4 +466,19 @@ to make it into three columns */
     color: #8ab4f8;
   }
 
+  /* .links {
+    display: flex;
+    flex-direction: column;
+    justify-self: space-evenly;
+    align-items: center;
+
+  }
+
+  .links a{
+    color:#03a9f4;
+    font-size: 1.25em;
+    text-decoration: none;
+    cursor: pointer;
+    font: weight 500px; 
+  } */
 }
