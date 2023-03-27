@@ -430,7 +430,8 @@ to make it into three columns */
   }
  
   .option-container {
-    height: 506px
+    height: 480px;
+    width:340px
   }
 
   .option-list ul {
