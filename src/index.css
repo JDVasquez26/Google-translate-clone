@@ -322,10 +322,10 @@ to make it into three columns */
     justify-content: flex-start;
     width: 340px;
     height: 826px;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   .app {
-    width: 370px;
+    width: 350px;
     height: 626px;
     overflow: hidden;
     /* background-color: purple; */
@@ -333,7 +333,7 @@ to make it into three columns */
 
   .content {
     /* width:400px; */
-    width: 340px;
+    width: 320px;
   
     /* background-color: green; */
   }
@@ -370,11 +370,11 @@ to make it into three columns */
   }
 
   .arrow-container {
-    padding: 10px;
+    padding: 5px;
   }
   .arrow-container svg {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     fill: whitesmoke;
   }
 
